@@ -1,0 +1,42 @@
+body {
+  background-color: lightgrey;
+  padding-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: "Times New Roman", Times, serif; }
+
+h1 {
+  color: #2b505d;
+  }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+.lead{
+    font-size: 7px;
+    color:gray;
+}
+
+.lead1{
+    text-align: right
+}
+
+.container > div {
+    background-color: lightpink;
+    /*font-size: 20px;*/
+    margin: 2px;
+    padding: 5px;
+    width: auto;
+}
+.container1 {
+    background-color: lightblue;
+    font-size: 20px;
+    margin: 20px;
+    padding: 25px;
+    width: 1000px;
+}
+.vid{
+    width: auto;
+}
+
