@@ -1,17 +1,22 @@
 {% extends "base.html" %}
 
 {% block title %}
-Log into your Account
+Login
 {% endblock %}
 
-
 {% block body %}
-<br>
+    <div class="loginpg">
+    <br>
 <form action="login" method="POST" role="form">
     {% csrf_token %}
-    {{ form.as_table }}
+    <table>    {{ form.as_table }}</table>
+
 
     <br>
-    <button type="submit" class="btn btn-primary" role="button">Log In</button>
+    <button type="submit" class="2 btn btn-primary" role="button">Log In</button>
 </form>
+
+    </div>
+
+
 {% endblock %}

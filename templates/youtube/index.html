@@ -5,23 +5,28 @@ Home
 {% endblock %}
 
 {% block body %}
+    <h1>welcome to my channel </h1>
     <hr />
-<h1>Welcome to the Morgans Video Site</h1>
-    <hr />
 
-{% for video in most_recent_videos %}
+        <div class="card-deck">
+            {% for video in most_recent_videos %}
+                     <div class="mb-auto">
+                        <div class="card" style="width: 12rem; height: 14rem;">
+                            <p class="cardp"><a href="{{ movies.location }}" style="color:black">{{video.title}}</a>
+                            </p>
+    {#                        <a href="{{ movies.location }}"><img src="{{ movies.thumbnail }}" class="card-img-top" width="125"height="125"></a>#}
+                            <div class="card-body">
+                         <p class="card-text">Uploaded by {{ video.user }} on {{ video.datetime }}
+                             <br />
 
-<div class="vid">
-        <div class="container1">
-          <h1 class="display-4">{{ video.title }}</h1>
-          <p class="lead">{{ video.description }}</p>
-
-          <p class="lead1">Uploaded by {{ video.user }} on {{ video.datetime }} </p>
-          <p><a href='/video/{{ video.id }}'>Watch Video</a></p>
+                             <a href='/video/{{ video.id }}' class="inpg btn btn-primary">Watch Video</a>
+                         </p>
+                        </div>
+                    </div>
+                    <br />
+                    </div>
+            {% endfor %}
         </div>
-</div>
-{% endfor %}
-
 
 {% endblock %}
 

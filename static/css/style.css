@@ -1,42 +1,96 @@
 body {
-  background-color: lightgrey;
-  padding-top: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
+  /*background-color: lightpink;*/
+  padding-top: 40px;
+  /*margin-left: 150px;*/
+  /*margin-right: 150px;*/
   font-family: "Times New Roman", Times, serif; }
+
+.container {
+    background-color: #7CB9E8;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 1px;
+    padding: 25px;
+    width: auto;
+    height: auto;
+}
 
 h1 {
   color: #2b505d;
   }
 
 a {
-  color: black;
-  text-decoration: none; }
+    color: black;
+    text-decoration: none;
+}
 
 .lead{
     font-size: 7px;
     color:gray;
 }
 
-.lead1{
-    text-align: right
-}
 
-.container > div {
-    background-color: lightpink;
-    /*font-size: 20px;*/
-    margin: 2px;
-    padding: 5px;
-    width: auto;
-}
-.container1 {
-    background-color: lightblue;
-    font-size: 20px;
-    margin: 20px;
-    padding: 25px;
-    width: 1000px;
-}
+
+/*.container > div {*/
+/*    background-color: lightpink;*/
+/*    !*font-size: 20px;*!*/
+/*    margin: 2px;*/
+/*    padding: 5px;*/
+/*    width: auto;*/
+/*}*/
+
 .vid{
     width: auto;
+    background-color: #F19CBB;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 420px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 1px;
+    height: 120px;
+    text-align: left;
 }
 
+.display-4{
+    font-size: 24px;
+
+}
+
+.watvid{
+    font-size: 14px;
+    text-align: right;
+}
+
+.lead1{
+    text-align: left;
+    font-size: 12px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.inpg{
+    align-content: center;
+    padding-left: 20px;
+    margin-top: 65px;
+}
+
+.cardp > p{
+    font-size: 1px;
+    font-family: "Times New Roman", Times, serif;
+    padding-bottom: 10px;
+}
+
+.card-text{
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.card{
+    background-color: #DD9DF1;
+    padding-left: 10px;
+}
+
+/*.register{*/
+/*        font-family: "Times New Roman", Times, serif;*/
+/*        color: #d3ff82;*/
+/*}*/
