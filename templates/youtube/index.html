@@ -5,15 +5,15 @@ Home
 {% endblock %}
 
 {% block body %}
-    <h1>welcome to my channel </h1>
+    <h1>Welcome to my Channel  <a style="font-size: large">{% now "d M Y" %}</a> </h1>
+
     <hr />
 
         <div class="card-deck">
             {% for video in most_recent_videos %}
                      <div class="mb-auto">
                         <div class="card" style="width: 12rem; height: 14rem;">
-                            <p class="cardp"><a href="{{ movies.location }}" style="color:black">{{video.title}}</a>
-                            </p>
+                            <p class="cardp">{{video.title}}</p>
     {#                        <a href="{{ movies.location }}"><img src="{{ movies.thumbnail }}" class="card-img-top" width="125"height="125"></a>#}
                             <div class="card-body">
                          <p class="card-text">Uploaded by {{ video.user }} on {{ video.datetime }}
@@ -27,6 +27,27 @@ Home
                     </div>
             {% endfor %}
         </div>
+
+
+{#        <div class="pagination">#}
+{#        <span class="step-links" style="font-size: 13px">#}
+{#            {% if movies.has_previous %}#}
+{#                <a href="?page=1">&laquo; first</a>#}
+{#                <a href="?page={{ movies.previous_page_number }}">previous</a>#}
+{#            {%  endif %}#}
+{##}
+{#            <span class="current">#}
+{#            Page {{ movies.number }} of {{ movies.paginator.num_pages }}#}
+{#        </span>#}
+{##}
+{#        {% if movies.has_next %}#}
+{#            <a href="?page={{ movies.next_page_number }}">next</a>#}
+{#            <a href="?page={{ movies.paginator.num_pages }}">last &raquo;</a>#}
+{#        {% endif %}#}
+{##}
+{#    </span>#}
+
+    </div>
 
 {% endblock %}
 

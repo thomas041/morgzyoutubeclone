@@ -1,39 +1,36 @@
 {% extends "base.html" %}
 
-{% block title %}
-Video
-{% endblock %}
+    {% block title %}Video{% endblock %}
 
+    {% block body %}
+    <div class="vidsection">
+        <h2>{{ video.title }}</h2>
 
-{% block body %}
+        <video width="640" height="480" controls>
+            <source src="{{ video.path }}" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+    </div>
 
-<h2>{{ video.title }}</h2>
+    <div class="comsection">
+        <h3>Comments</h3>
 
-<video width="640" height="480" controls>
-    <source src="{{ video.path }}" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-<p>{{ video.description }}</p>
+        {% if form %}
+        <form action="/comment" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type='hidden' name='video' value='{{ video.id }}'>
+            <br>
+            <button type="submit" class="btn btn-primary">Post Comment!</button>
+        </form>
+        {% endif %}
 
-<br><br>
-<h3>Comments</h3>
-
-{% if form %}
-<form action="/comment" method="POST">
-    {% csrf_token %}
-    {{ form }}
-    <input type='hidden' name='video' value='{{ video.id }}'>
-    <br>
-    <button type="submit" class="btn btn-primary">Post Comment!</button>
-</form>
-{% endif %}
-
-{% for comment in comments %}
-<p>
-{{ comment.user }} posted on: {{ comment.datetime }} <br>
-{{ comment.text }}
-</p>
-{% endfor %}
-
+        {% for comment in comments %}
+        <p>
+        {{ comment.user }} posted on: {{ comment.datetime }} <br>
+        {{ comment.text }}
+        </p>
+        {% endfor %}
+    </div>
 
 {% endblock %}

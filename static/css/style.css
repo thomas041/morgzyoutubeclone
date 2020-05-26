@@ -1,12 +1,10 @@
 body {
-  /*background-color: lightpink;*/
-  padding-top: 40px;
-  /*margin-left: 150px;*/
-  /*margin-right: 150px;*/
-  font-family: "Times New Roman", Times, serif; }
+    padding-top: 40px;
+    font-family: "Times New Roman", Times, serif;
+}
 
 .container {
-    background-color: #7CB9E8;
+    background-color: #FFE1F0;
     font-size: 20px;
     margin-left: 200px;
     margin-top: 1px;
@@ -29,19 +27,9 @@ a {
     color:gray;
 }
 
-
-
-/*.container > div {*/
-/*    background-color: lightpink;*/
-/*    !*font-size: 20px;*!*/
-/*    margin: 2px;*/
-/*    padding: 5px;*/
-/*    width: auto;*/
-/*}*/
-
 .vid{
     width: auto;
-    background-color: #F19CBB;
+    background-color: #FFC0CB;
     font-size: 20px;
     margin-left: 10px;
     margin-right: 420px;
@@ -86,11 +74,9 @@ a {
 }
 
 .card{
-    background-color: #DD9DF1;
+    background-color: #ffc3e1;
     padding-left: 10px;
 }
-
-/*.register{*/
-/*        font-family: "Times New Roman", Times, serif;*/
-/*        color: #d3ff82;*/
-/*}*/
+#main-footer{
+    background-color: #cc99cc;
+}
