@@ -5,3 +5,6 @@ migrations/
 *.mp4
 *.MP4
 *.mkv
+*.pyc
+/__pycache__
+__init__.py
