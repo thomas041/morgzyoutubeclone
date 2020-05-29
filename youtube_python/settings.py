@@ -13,7 +13,7 @@ SECRET_KEY = '067dowgvbbhxh670i8#gox(_pq37*yj(wjt)9yg@+dz-)oggpr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.4.2.116',]
+ALLOWED_HOSTS = ['10.4.2.116','sandbox.morgz.local',]
 
 # Application definition
 
@@ -62,10 +62,21 @@ WSGI_APPLICATION = 'youtube_python.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'testdb',
+        'USER': 'tom',
+        'PASSWORD': 'D248003w',
+        'HOST': '10.4.2.126',
+        'PORT': '5432',
     }
 }
 
