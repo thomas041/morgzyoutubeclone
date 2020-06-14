@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Video(models.Model):
     title = models.CharField(max_length=30)
@@ -8,6 +7,7 @@ class Video(models.Model):
     path = models.CharField(max_length=60)
     datetime = models.DateTimeField(auto_now=True, blank=False, null=False) #todo: auto_now=True
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+
 
 class Comment(models.Model):
     text = models.TextField(max_length=300)
