@@ -13,7 +13,7 @@ SECRET_KEY = '067dowgvbbhxh670i8#gox(_pq37*yj(wjt)9yg@+dz-)oggpr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.4.2.116','sandbox.morgz.local',]
+ALLOWED_HOSTS = ['10.4.2.116','*',]
 
 # Application definition
 
@@ -75,7 +75,7 @@ DATABASES = {
         'NAME': 'testdb',
         'USER': 'tom',
         'PASSWORD': 'D248003w',
-        'HOST': '10.4.2.126',
+        'HOST': '10.4.2.7',
         'PORT': '5432',
     }
 }
